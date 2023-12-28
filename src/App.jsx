@@ -1,9 +1,10 @@
-function App(){
+import "./App.css";
+import NavBar from "./header/NavBar";
+function App() {
   return (
-    
-    <>
-    Hello World
-    </>
-  )
-  }
-export default App
+    <div className="div_1">
+      <NavBar />
+    </div>
+  );
+}
+export default App;
