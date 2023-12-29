@@ -1,18 +1,27 @@
-
-html,
-body {
-    --accent: 124, 58, 237;
-    --main-color: #171515;
-    --sec-color: #2c2c2c;
-    --accent-color: #e2b714;
-    --font-color: hsl(0, 0%, 85%);
-    --charcoal: #231f20;
-    --brand-coal: #0f0d0e;
-    background-image: repeating-linear-gradient(to right,var(--charcoal),var(--charcoal) 1px,transparent 1px,transparent 30px),repeating-linear-gradient(to bottom,var(--charcoal),var(--charcoal) 1px,transparent 1px,transparent 30px);
-}
-html{
-    font-family: 'Courier New', Courier, monospace;
+.div_1, html {
+  --accent: 124, 58, 237;
+  --main-color: #171515;
+  --sec-color: #2c2c2c;
+  --accent-color: #e2b714;
+  --font-color: hsl(0, 0%, 85%);
+  --charcoal: #231f20;
+  --brand-coal: #0f0d0e;
+  background-image: repeating-linear-gradient(
+      to right,
+      var(--charcoal),
+      var(--charcoal) 1px,
+      transparent 1px,
+      transparent 30px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      var(--charcoal),
+      var(--charcoal) 1px,
+      transparent 1px,
+      transparent 30px
+    );
+    font-family: "Courier New", Courier, monospace;
     background-color: #171515;
-    color:var(--font-color)
-    
-}
+    color: var(--font-color);
+    padding: 2px 0px;
+  }

@@ -1,4 +1,5 @@
 import './NavBar.css'
+import Projects from '../Projects/Projects';
 
 function NavBar() {
   return (
@@ -7,7 +8,7 @@ function NavBar() {
         <a href="/Home"> Home </a>
       </p>
       <p>
-        <a href="/projects">Projects</a>
+        <a href="Projects">Projects</a>
       </p>
       <p>
         <a href="/Contact">Contact</a>
