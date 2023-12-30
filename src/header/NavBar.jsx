@@ -2,6 +2,7 @@ import './NavBar.css'
 import Projects from '../Projects/Projects';
 
 function NavBar() {
+  const [ toggleMenu,setToggleMEnu]= react.useState(false)
   return (
     <div className="nav-bar-div">
       <p>
