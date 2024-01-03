@@ -1,4 +1,4 @@
-.div_1, html {
+:root {
   --accent: 124, 58, 237;
   --main-color: #171515;
   --sec-color: #2c2c2c;
@@ -6,6 +6,14 @@
   --font-color: hsl(0, 0%, 85%);
   --charcoal: #231f20;
   --brand-coal: #0f0d0e;
+}
+
+html body {
+  width: 100vw;
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   background-image: repeating-linear-gradient(
       to right,
       var(--charcoal),
@@ -20,8 +28,30 @@
       transparent 1px,
       transparent 30px
     );
-    font-family: "Courier New", Courier, monospace;
-    background-color: #171515;
-    color: var(--font-color);
-    padding: 2px 0px;
+  font-family: "Courier New", Courier, monospace;
+
+  background-color: #070404;
+  color: var(--font-color);
+}
+.div_1 {
+  width: 60vw;
+  display: grid;
+  grid-template-rows: auto;
+  gap: 2rem;
+}
+.main__app {
+  margin: 1rem 0rem;
+  display: grid;
+  gap: 0.1px;
+  width: 100%;
+}
+
+@media screen and (max-width: 428px) {
+  .div_1 {
+    width: 100vw;
   }
+
+  .main__app {
+    grid-template-columns: 1fr;
+  }
+}
