@@ -1,24 +1,21 @@
+import React from "react";
+import { Link, Routes, Route } from "react-router-dom";
 import "./NavBar.css";
-import Projects from "../Projects/Projects";
 
 function NavBar() {
-  function handleClick(event){
-    console.log(Projects)
-  }
   return (
     <div className="nav-bar-div">
       <p>
-        <a href="/"> Home </a>
+        <Link to="/">Home</Link>
       </p>
       <p>
-        <a onClick={handleClick} href={Projects}> projects</a>
+        <Link to="/Projects">Projects</Link>
       </p>
       <p>
-        <a href="/Contact">Contact</a>
+        <Link to="/Faq">FAQ</Link>
       </p>
       <p>
-        {" "}
-        <a href="/faq">FAQ</a>
+        <Link to="/contact">Contact</Link>
       </p>
     </div>
   );
