@@ -1,4 +1,4 @@
-h3{
+h3 {
   text-transform: capitalize;
   text-decoration: underline;
 }
@@ -37,36 +37,5 @@ h3{
   padding: 5px;
   border-radius: 0.2rem;
   background-color: #282828;
+  height: 17px;
 }
-
-/* .app__projects  {
-  height: 300px;
-  -webkit-columns: 100px 5;
-  display: grid;
-  width: 100%;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  background-color: #212121;
-}
-
-.app__projects-columnleft,
-.app__projects-columnright {
-  display: inline-block;
-  width: 150px;
-}
-.app__projects-columnright {
-  padding: 24px;
-  background-color: #212121;
-  border-radius: 0.3rem;
-  margin-left: 150px;
-}
-.app__projects-columnleft {
-  padding: 24px;
-  background-color: #212121;
-  border-radius: 0.3rem;
-}
-.app__projects-columnleft h1,
-.app__projects-columnright h1 {
-  color: #4d9355;
-  text-transform: capitalize;
-} */

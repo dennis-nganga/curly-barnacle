@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "./Contact.css";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({
@@ -8,12 +9,11 @@ export default function ContactUs() {
     email: "",
     subject: "",
     message: "",
-    send:false,
+    send: false,
   });
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log(formData);
   }
 
   function handleChange(event) {
@@ -28,33 +28,42 @@ export default function ContactUs() {
       [key]: value,
     });
   }
-
   console.log(formData);
   function sendEmail(e) {
-    e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
+    e.preventDefault();
 
     emailjs
       .sendForm(
         "service_oocoaqc",
         "template_gealfsg",
-        e.target,
+        e.target, //should be the HTML form element
         "6I6J2_uJHt_oM1rJw"
       )
       .then(
         (result) => {
-          window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
+          console.log("Email sent successfully!");
+          setFormData({
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+            send: true,
+          });
+          // Optionally, you can navigate to a different page instead of reloading
+          window.location.reload(); // This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
         },
         (error) => {
-          console.log(error.text);
+          console.log("Error sending email:", error.text);
         }
       );
   }
+
   //    <>
   //    PLEASE TRYAGAIN LATER</>
 
   return (
     <div className="contact__form-wrapper">
-      <form className="contact__form" onSubmit={sendEmail}>
+      {/* <form className="contact__form" onSubmit={sendEmail}>
         <input type="hidden" name="contact_number" />
         <label>Name</label>
         <input
@@ -85,25 +94,35 @@ export default function ContactUs() {
         <textarea
           id="message"
           name="html_message"
-          value={formData.email}
+          value={formData.message}
           onChange={handleChange}
         />
-        {/* hidden the send btn until event and state are implemented */}
+
         <input
           id="send-btn"
-          type="button"
+          type="submit"
           value="Send"
-          onClick={formData.send}
-          onChange={handleChange}
+          onClick={sendEmail}
+          disabled={!formData.name || !formData.email || !formData.message}
         />
-      </form>
-      <div className="gitlink">
-        <a href="https://github.com/dennis-nganga">Github</a>
-      </div>
-      <div className="linkedin">
-        <a href="https://www.linkedin.com/in/dennis-nganga-042968265/">
-          Linked in
-        </a>
+      </form> */}
+      <div className="contact-links-wrapper">
+        <h4>Contacts</h4>
+        <div className="gitlink">
+          <a href="https://github.com/dennis-nganga">
+        
+            GitHub <FaGithub />
+          </a>
+        </div>
+        <div className="linkedin">
+          <a href="https://www.linkedin.com/in/dennis-nganga-042968265/">
+            LinkedIn
+            <FaLinkedinIn />
+          </a>
+        </div>
+        <div className="email-address">
+          <h5>denniskimani46@gmail.com</h5>
+        </div>
       </div>
     </div>
   );
