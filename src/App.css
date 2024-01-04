@@ -37,7 +37,7 @@ html body {
   color: var(--font-color);
 }
 .div_1 {
-  width: 60vw;
+  width: 85vw;
   display: grid;
   grid-template-rows: auto;
   gap: 2rem;
@@ -49,8 +49,13 @@ html body {
   width: 100%;
 }
 
-@media screen and (max-width: 400px) {
-  html body {
-    display: grid;
+@media screen and (max-width: 760px) {
+  .div_1 {
+    width: 50vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  .div_1 {
+    width: 60vw;
   }
 }
