@@ -48,6 +48,7 @@ function Projects() {
   return (
     <>
       <h3> some items I've built</h3>
+
       <div className="wrapper-items">
         <div className="wrapper__projects">
           <div className="wrapper__project item1">
@@ -71,8 +72,9 @@ function Projects() {
               <span className="lang item2">Reactjs</span>
             </div>
           </div>
-            </div>
-          <div className="wrapper__projects">
+        </div>
+        {/* Below are projects in progress to be added to the list  */}
+        {/* <div className="wrapper__projects">
           <div className="wrapper__project item3">
             <div className="title item3">PythonWebscraper2</div>
             <div className="proj__desc item3">
@@ -83,8 +85,8 @@ function Projects() {
               <span className="lang item3">Python</span>
           </div>
         </div>
-        </div>
-        <div className="wrapper__projects">
+        </div> */}
+        {/* <div className="wrapper__projects">
           <div className="wrapper__project item4">
             <div className="title item3">PythonWebscraper3</div>
             <div className="proj__desc item4">
@@ -95,7 +97,7 @@ function Projects() {
               <span className="lang item4">Python</span>
           </div>
         </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

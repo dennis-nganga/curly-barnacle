@@ -10,7 +10,7 @@ function Home() {
       </div>
       <div className="wrapper__bio">
         <h1>Hi I'm Dennis</h1>
-        <p> software engineer good at vanilla js,python </p>
+        <p> Software engineer good at vanilla js,python. </p>
       </div>
       <Projects />
     </>

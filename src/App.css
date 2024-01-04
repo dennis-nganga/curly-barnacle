@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&family=Montserrat:wght@500&family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@500&family=Montserrat:wght@500&family=Poppins&display=swap");
 
 :root {
   --accent: 124, 58, 237;
@@ -30,8 +30,8 @@ html body {
       transparent 1px,
       transparent 30px
     );
-    
-    font-family: 'Montserrat', sans-serif;
+
+  font-family: "Montserrat", sans-serif;
 
   background-color: #070404;
   color: var(--font-color);
@@ -49,12 +49,8 @@ html body {
   width: 100%;
 }
 
-@media screen and (max-width: 428px) {
-  .div_1 {
-    width: 100vw;
-  }
-
-  .main__app {
-    grid-template-columns: 1fr;
+@media screen and (max-width: 400px) {
+  html body {
+    display: grid;
   }
 }
