@@ -72,3 +72,9 @@
     width: 35vw;
   }
 } */
+
+@media screen and (min-height: 760px) {
+  .contact__form-wrapper {
+    width: 35vw;
+  }
+}

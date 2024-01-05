@@ -53,7 +53,12 @@ html body {
 
 @media screen and (min-height: 760px) {
   html body {
-    width: 85vw; 
+    /* ... existing styles ... */
+
+    width: 100%; /* or adjust as needed */
+  }
+  .div_1 {
+    width: 90vw; /* Adjust as needed */
   }
 }
 /* @media (max-width: 700px) {

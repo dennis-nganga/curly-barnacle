@@ -29,3 +29,9 @@
 
   }
 } */
+
+@media screen and (min-height: 760px) {
+  .faq__wrapper {
+    width: 36.5vw;
+  }
+}
