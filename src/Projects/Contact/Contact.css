@@ -56,7 +56,7 @@
 .gitlink a,
 .linkedin a {
   font-size: 1.5rem;
-  color:inherit;
+  color: inherit;
   padding: 5px;
   margin: 0px;
   cursor: pointer;
@@ -66,4 +66,9 @@
   padding: 5px;
   margin: 0rem;
   text-transform: none;
+}
+@media screen and (min-width: 300px) {
+  .contact__form-wrapper {
+    width: 35vw;
+  }
 }
