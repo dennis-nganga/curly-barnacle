@@ -49,8 +49,9 @@ html body {
   width: 100%;
 }
 
-@media screen and (max-width: 760px) {
+@media (max-width: 760px) {
   .div_1 {
+    background-color: #e2b714 !important;
     width: 50vw;
   }
 }
