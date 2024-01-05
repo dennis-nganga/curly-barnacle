@@ -5,10 +5,10 @@ function Footer() {
     <>
       <div className="wrapper__footer">
         <div className="footer">
-          <a href="http://react.dev"> Powered by React</a>
+          <a href="http://react.dev"> Powered by Reactjs</a>
         </div>
         <div className="footer__copyright">
-          <span class="footer__item2">copyright © 2023</span>
+          <span className="footer__item2">copyright © 2023</span>
         </div>
       </div>
     </>
