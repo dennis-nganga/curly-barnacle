@@ -51,10 +51,19 @@ html body {
   width: 100%;
 }
 
-@media (min-width: 400px) {
+@media screen and (min-height: 760px) {
+  html body {
+    /* ... existing styles ... */
+
+    width: 100%; /* or adjust as needed */
+  }
+  .div_1 {
+    width: 90vw; /* Adjust as needed */
+  }
+}
+/* @media (max-width: 700px) {
   html body {
     zoom: 3.8;
     width: 86vw;
   }
-  
-}
+} */
