@@ -16,7 +16,7 @@ html body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  overflow-x: hidden;
+  overflow: hidden;
 
   background-image: repeating-linear-gradient(
       to right,
@@ -56,5 +56,4 @@ html body {
     zoom: 3.8;
     width: 86vw;
   }
-  
 }
