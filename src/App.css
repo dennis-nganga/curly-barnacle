@@ -56,10 +56,10 @@ html body {
     /* ... existing styles ... */
 
     width: 99vw; /* or adjust as needed */
-    zoom: 4.5;
+    zoom: 4.3;
   }
   .div_1 {
-    width: 90vw; /* Adjust as needed */
+    width: 99vw; /* Adjust as needed */
   }
 }
 /* @media (max-width: 700px) {
