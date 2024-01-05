@@ -16,6 +16,7 @@ html body {
   display: flex;
   align-items: center;
   flex-direction: column;
+
   background-image: repeating-linear-gradient(
       to right,
       var(--charcoal),
@@ -35,28 +36,29 @@ html body {
 
   background-color: #070404;
   color: var(--font-color);
+
+ 
 }
 .div_1 {
   width: 85vw;
   display: grid;
   grid-template-rows: auto;
   gap: 2rem;
+
+
 }
 .main__app {
   margin: 1rem 0rem;
   display: grid;
   gap: 0.1px;
   width: 100%;
+
+  
 }
 
-@media (max-width: 760px) {
-  .div_1 {
-    background-color: #e2b714 !important;
-    width: 50vw;
-  }
-}
-@media screen and (max-width: 900px) {
-  .div_1 {
-    width: 60vw;
+@media (min-width: 700px) {
+  html body {
+    zoom:7.5;
+    width: 87vw;
   }
 }
