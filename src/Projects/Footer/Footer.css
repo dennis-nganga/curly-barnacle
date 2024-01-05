@@ -12,7 +12,7 @@
   cursor: pointer;
   color: inherit;
 }
-@media (min-width: 700px) {
+@media (min-width: 300px) {
   .wrapper__footer {
     width: 33vw;
   }
