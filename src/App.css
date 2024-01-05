@@ -53,10 +53,8 @@ html body {
 
 @media (min-width: 400px) {
   html body {
-    zoom: 3.3;
-    width: 87vw;
+    zoom: 3.8;
+    width: 86vw;
   }
-  .div_1 {
-    align-items: center;
-  }
+  
 }
