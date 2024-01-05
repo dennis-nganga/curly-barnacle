@@ -23,3 +23,9 @@
   font-size: 1rem;
   margin-top: 1px;
 }
+@media screen and (min-width: 300px) {
+  .faq__wrapper {
+    width: 36.5vw;
+
+  }
+}
