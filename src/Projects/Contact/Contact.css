@@ -67,8 +67,8 @@
   margin: 0rem;
   text-transform: none;
 }
-@media screen and (min-width: 300px) {
+/* @media screen and (min-width: 300px) {
   .contact__form-wrapper {
     width: 35vw;
   }
-}
+} */

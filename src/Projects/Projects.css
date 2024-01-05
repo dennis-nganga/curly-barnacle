@@ -39,10 +39,16 @@ h3 {
   background-color: #282828;
   height: 17px;
 }
+@media screen and (min-height: 760px) {
+    .wrapper-items {
+      grid-template-columns: 1fr;
+      width: 36.5vw;
+    }
+  }
 
-@media (min-width: 700px) {
+/* @media (min-width: 700px) {
   .wrapper-items {
     grid-template-columns: 1fr;
     width: 36.5vw;
   }
-}
+} */

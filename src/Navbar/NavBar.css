@@ -21,9 +21,13 @@
   text-decoration: none;
   color: var(--font-color);
 }
-
-@media (min-width: 700px) {
+@media screen and (min-height: 760px) {
   .nav-bar-div {
     width: 33vw;
   }
 }
+/* @media (min-width: 700px) {
+   {
+    width: 33vw;
+  }
+} */
