@@ -55,7 +55,8 @@ html body {
   html body {
     /* ... existing styles ... */
 
-    width: 100%; /* or adjust as needed */
+    width: 99vw; /* or adjust as needed */
+    zoom: 4.5;
   }
   .div_1 {
     width: 90vw; /* Adjust as needed */
