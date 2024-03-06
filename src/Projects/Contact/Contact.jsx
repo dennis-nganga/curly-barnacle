@@ -121,7 +121,7 @@ export default function ContactUs() {
           </a>
         </div>
         <div className="email-address">
-          <h5>denniskimani46@gmail.com</h5>
+          <h5>denniskimani416@gmail.com</h5>
         </div>
       </div>
     </div>
